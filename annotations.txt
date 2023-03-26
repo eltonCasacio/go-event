@@ -1,0 +1,5 @@
+EVENT       => Evento(Carrega dados)
+HANDLER     => Operacoes que serao executadas quando um evento é chamado
+DISPATCHER  => Gerenciador dos nossos eventos/Operacoes
+                    Registrar os eventos e suas Operacoes
+                    Despachar / Fire no evento para que suas operacoes sejam executadas

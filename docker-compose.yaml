@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+    rabbitmq3:
+        container_name: "rabbitmq"
+        image: rabbitmq:3.8.16-management
+        hostname: "rabbitmq"
+        environment:
+            - RABBITMQ_DEFAULT_USER=horus
+            - RABBITMQ_DEFAULT_PASS=horus
+            - RABBITMQ_DEFAULT_VHOST=/
+        ports:
+            # AMQP protocol port
+            - '5672:5672'
+            # HTTP management UI
+            - '15672:15672'
+            - '15692:15692'
